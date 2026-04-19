@@ -1,5 +1,5 @@
 const state = {
-  workspace: "RADGov US Govt",
+  workspace: "RADIANT Proposal",
   view: "dashboard",
   kpis: {
     active: 38,
@@ -109,7 +109,7 @@ function renderApp(){
   document.getElementById("app").innerHTML = `
     <div class="layout">
       <aside class="sidebar">
-        <div class="brand">PropTrack</div>
+        <div class="brand">Proposalbuilder</div>
         <div class="workspace">${state.workspace}</div>
         <div class="nav">
           ${navButton("dashboard","Command Center")}
