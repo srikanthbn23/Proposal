@@ -1,0 +1,31 @@
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f4f6f8;color:#0f1e35}
+.layout{display:grid;grid-template-columns:260px 1fr;min-height:100vh}
+.sidebar{background:#0f1e35;color:#fff;padding:20px}
+.brand{font-size:24px;font-weight:700;margin-bottom:20px}
+.workspace{background:#fff;color:#0f1e35;padding:10px 12px;border-radius:10px;margin-bottom:20px;font-size:14px}
+.nav button{display:block;width:100%;text-align:left;border:0;background:transparent;color:#d8dfeb;padding:12px;border-radius:10px;margin-bottom:6px;cursor:pointer;font-size:15px}
+.nav button.active,.nav button:hover{background:#1f365a;color:#fff}
+.main{padding:24px}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.title{font-size:28px;font-weight:700}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:20px}
+.card{background:#fff;border-radius:16px;padding:18px;box-shadow:0 4px 18px rgba(0,0,0,.06)}
+.kpi-label{font-size:13px;color:#5a667a}
+.kpi-value{font-size:28px;font-weight:700;margin-top:8px}
+.grid{display:grid;grid-template-columns:2fr 1fr;gap:16px}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:12px;border-bottom:1px solid #e8edf3;text-align:left;font-size:14px}
+.badge{display:inline-block;padding:5px 10px;border-radius:999px;font-size:12px;font-weight:700}
+.badge.red{background:#fde8e8;color:#b42318}.badge.amber{background:#fff4db;color:#b54708}.badge.green{background:#dcfae6;color:#027a48}
+.kanban{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.column{background:#e9edf2;border-radius:16px;padding:12px}
+.column h3{margin:4px 0 12px 0;font-size:15px}
+.ticket{background:#fff;border-radius:12px;padding:12px;margin-bottom:10px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.ticket-title{font-weight:700;margin-bottom:8px}
+.ticket-meta{font-size:12px;color:#667085}
+.actions{margin-top:10px}
+.actions button,.topbtn{background:#cc2229;color:#fff;border:0;border-radius:10px;padding:10px 14px;cursor:pointer}
+.list{display:grid;gap:12px}
+.item-title{font-weight:700;margin-bottom:4px}
+.small{font-size:13px;color:#667085}
+@media (max-width: 980px){.layout{grid-template-columns:1fr}.sidebar{display:none}.kpis,.kanban,.grid{grid-template-columns:1fr}}
